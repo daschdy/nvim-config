@@ -7,6 +7,11 @@ vim.keymap.set("n", "<c-d>", "<C-d>zz")
 vim.keymap.set("n", "<c-u>", "<C-u>zz")
 vim.keymap.set("n", "<leader>k", ":nohlsearch<CR>")
 
+vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
+vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
+vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
+vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+
 -- Copilot
 vim.keymap.set("n", "<leader>pe", ":Copilot enable<CR>", {})
 vim.keymap.set("n", "<leader>pd", ":Copilot disable<CR>", {})
@@ -17,6 +22,7 @@ vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, {})
 vim.keymap.set("n", "<leader>en", vim.diagnostic.goto_next, {})
 vim.keymap.set("n", "<leader>ep", vim.diagnostic.goto_prev, {})
 
