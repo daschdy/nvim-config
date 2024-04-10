@@ -54,3 +54,6 @@ vim.keymap.set("n", "<leader>hs", ":split<CR>", {})
 -- Specific
 vim.keymap.set("i", "<M-5>", "[", {})
 vim.keymap.set("i", "<M-6>", "]", {})
+
+-- Undotree 
+vim.keymap.set("n", "<leader>ut", ":UndotreeToggle<CR>", {})

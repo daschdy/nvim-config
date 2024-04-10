@@ -5,7 +5,6 @@ return {
 		require("lualine").setup({
 			options = {
 				theme = "moonfly",
-				-- theme = "nord",
 			},
 		})
 	end,
