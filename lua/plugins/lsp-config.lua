@@ -48,10 +48,12 @@ return {
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
+
 			-- notes
 			lspconfig.marksman.setup({
 				capabilities = capabilities,
 			})
+
 			-- code
 			lspconfig.jdtls.setup({
 				capabilities = capabilities,

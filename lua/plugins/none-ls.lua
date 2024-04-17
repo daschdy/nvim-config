@@ -4,6 +4,7 @@ return {
 		local null_ls = require("null-ls")
 
 		local formatting = null_ls.builtins.formatting
+		local diagnostics = null_ls.builtins.diagnostics
 
 		null_ls.setup({
 			debug = true,
@@ -11,7 +12,8 @@ return {
 				formatting.stylua,
 				formatting.prettier,
 				formatting.markdownlint,
-				formatting.yapf,
+				formatting.black,
+				diagnostics.ruff,
 				null_ls.builtins.completion.spell,
 			},
 		})

@@ -7,10 +7,6 @@ return {
 			ensure_installed = {
 				"lua",
 				"markdown",
-				"markdown_inline",
-				"java",
-				"scala",
-				"rust",
 				"toml",
 				"astro",
 				"typescript",

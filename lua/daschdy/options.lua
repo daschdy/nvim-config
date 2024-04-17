@@ -4,13 +4,13 @@
 vim.opt.relativenumber = true
 
 -- tabs to 2 spaces
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 
 -- Enable auto indenting and set it to spaces
 -- vim.opt.smartindent = true
-vim.opt.shiftwidth = 2
+vim.opt.shiftwidth = 4
 
 -- Enable smart indenting
 vim.opt.breakindent = true
