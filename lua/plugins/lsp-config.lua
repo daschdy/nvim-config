@@ -67,6 +67,9 @@ return {
 			lspconfig.pyright.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.clangd.setup({
+				capabilities = capabilities,
+			})
 		end,
 	},
 }

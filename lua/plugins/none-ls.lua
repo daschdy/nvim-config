@@ -13,7 +13,6 @@ return {
 				formatting.prettier,
 				formatting.markdownlint,
 				formatting.black,
-				diagnostics.ruff,
 				null_ls.builtins.completion.spell,
 			},
 		})
