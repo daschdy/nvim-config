@@ -6,7 +6,9 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 vim.keymap.set("n", "<c-d>", "<C-d>zz")
 vim.keymap.set("n", "<c-u>", "<C-u>zz")
 vim.keymap.set("n", "<leader>k", ":nohlsearch<CR>")
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- because I am a dummy
 vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
@@ -35,17 +37,10 @@ vim.keymap.set("n", "<c-n>", ":Neotree filesystem reveal left<CR>")
 -- NoneLS
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 
--- Pomo
-vim.keymap.set("n", "<c-s-z>", ":TimerStart 25m Fokus<CR>", {})
-vim.keymap.set("n", "<c-s-x>", ":TimerStop<CR>", {})
-
 -- Zettelkasten
 vim.keymap.set("n", "<leader>zf", "<cmd>Telekasten find_notes<CR>", {})
 vim.keymap.set("n", "<leader>zt", "<cmd>Telekasten show_tags<CR>", {})
 vim.keymap.set("n", "<leader>zn", "<cmd>Telekasten new_note<CR>", {})
-
--- Set highlight on search, but clear on pressing <Esc> in normal mod
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Split 
 vim.keymap.set("n", "<leader>vs", ":vsplit<CR>", {})
