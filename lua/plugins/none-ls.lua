@@ -11,7 +11,6 @@ return {
 			sources = {
 				formatting.stylua,
 				formatting.prettier,
-				formatting.markdownlint,
 				formatting.black,
 				null_ls.builtins.completion.spell,
 			},
