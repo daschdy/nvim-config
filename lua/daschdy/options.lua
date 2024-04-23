@@ -24,7 +24,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- text wrap
-vim.opt.wrap = true
+vim.opt.wrap = false
 
 -- Set leader key to space
 vim.g.mapleader = " "
