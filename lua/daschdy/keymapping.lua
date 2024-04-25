@@ -5,8 +5,8 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 vim.keymap.set("n", "<c-d>", "<C-d>zz")
 vim.keymap.set("n", "<c-u>", "<C-u>zz")
-vim.keymap.set("n", "<leader>k", ":nohlsearch<CR>")
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+vim.keymap.set("n", "<leader>x", "<cmd>source %<CR>")
 
 -- because I am a dummy
 vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
@@ -46,11 +46,5 @@ vim.keymap.set("n", "<leader>zn", "<cmd>Telekasten new_note<CR>", {})
 vim.keymap.set("n", "<leader>vs", ":vsplit<CR>", {})
 vim.keymap.set("n", "<leader>hs", ":split<CR>", {})
 
--- Specific
-vim.keymap.set("i", "<M-5>", "[", {})
-vim.keymap.set("i", "<M-6>", "]", {})
-
 -- Undotree
 vim.keymap.set("n", "<leader>ut", ":UndotreeToggle<CR>", {})
-
--- Harpoon 
