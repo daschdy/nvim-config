@@ -2,6 +2,7 @@
 
 -- line numbers
 vim.opt.relativenumber = true
+vim.opt.number = true
 
 -- tabs to 2 spaces
 vim.opt.tabstop = 4
