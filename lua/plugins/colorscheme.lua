@@ -17,7 +17,11 @@ return {
 		config = function()
 			local rp = require("rose-pine")
 			rp.setup({
-				transparent = true, -- Enable this to disable setting the background color
+				styles = {
+					bold = true,
+					italic = true,
+					transparency = true,
+				},
 				terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
 			})
 			vim.cmd.colorscheme("rose-pine")
