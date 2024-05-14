@@ -41,7 +41,8 @@ vim.opt.termguicolors = true
 vim.opt.clipboard = "unnamedplus"
 
 -- Cursorline
-vim.opt.cursorline = true
+-- vim.opt.cursorline = true
+vim.opt.guicursor = ""
 
 -- Mouse Mode
 vim.opt.mouse = "a"
@@ -52,9 +53,3 @@ vim.opt.showmode = false
 -- Decrease update time
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
-
--- Nerd Font installed?
-vim.g.have_nerd_font = true
-
--- CursorLine?
-vim.opt.cursorline = true
