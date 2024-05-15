@@ -26,7 +26,17 @@ return {
 	},
 	{
 		"j-hui/fidget.nvim",
-		opts = {},
+		opts = {
+			notification = {
+				view = {
+					stack_upwards = false,
+				},
+				window = {
+					border = "rounded",
+					align = "top",
+				},
+			},
+		},
 	},
 	{
 		"neovim/nvim-lspconfig",
