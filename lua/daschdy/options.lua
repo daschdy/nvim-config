@@ -51,5 +51,5 @@ vim.opt.mouse = "a"
 vim.opt.showmode = false
 
 -- Decrease update time
-vim.opt.updatetime = 250
-vim.opt.timeoutlen = 300
+vim.opt.updatetime = 200
+vim.opt.timeoutlen = 250
