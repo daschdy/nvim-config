@@ -10,21 +10,26 @@ return {
 		-- end,
 	},
 	{
-		"rose-pine/neovim",
-		as = "rose-pine",
+		"navarasu/onedark.nvim",
+		as = "onedark",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			local rp = require("rose-pine")
-			rp.setup({
+			local onedark = require("onedark")
+			onedark.setup({
+				theme = "onedark", -- or "onelight"
 				styles = {
-					bold = true,
-					italic = true,
-					transparency = true,
+					comments = "italic",
+					keywords = "italic",
+					functions = "italic",
+					variables = "italic",
 				},
-				terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
+				transparent = false,
+				hideInactiveStatusline = true,
+				invertSignsSelection = true,
+				invertNormal = false,
 			})
-			vim.cmd.colorscheme("rose-pine")
+			vim.cmd.colorscheme("onedark")
 		end,
-	},
+	}
 }
