@@ -11,7 +11,6 @@ return {
 	},
 	{
 		"navarasu/onedark.nvim",
-		as = "onedark",
 		lazy = false,
 		priority = 1000,
 		config = function()
