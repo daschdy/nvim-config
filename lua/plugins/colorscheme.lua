@@ -10,25 +10,33 @@ return {
 		-- end,
 	},
 	{
-		"navarasu/onedark.nvim",
+		-- "navarasu/onedark.nvim",
+		-- lazy = false,
+		-- priority = 1000,
+		-- config = function()
+		-- 	local onedark = require("onedark")
+		-- 	onedark.setup({
+		-- 		theme = "onedark", -- or "onelight"
+		-- 		styles = {
+		-- 			comments = "italic",
+		-- 			keywords = "italic",
+		-- 			functions = "italic",
+		-- 			variables = "italic",
+		-- 		},
+		-- 		transparent = false,
+		-- 		hideInactiveStatusline = true,
+		-- 		invertSignsSelection = true,
+		-- 		invertNormal = false,
+		-- 	})
+		-- 	vim.cmd.colorscheme("onedark")
+		-- end,
+	},
+	{
+		"folke/tokyonight.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			local onedark = require("onedark")
-			onedark.setup({
-				theme = "onedark", -- or "onelight"
-				styles = {
-					comments = "italic",
-					keywords = "italic",
-					functions = "italic",
-					variables = "italic",
-				},
-				transparent = false,
-				hideInactiveStatusline = true,
-				invertSignsSelection = true,
-				invertNormal = false,
-			})
-			vim.cmd.colorscheme("onedark")
+			vim.cmd.colorscheme("tokyonight-night")
 		end,
 	},
 }
