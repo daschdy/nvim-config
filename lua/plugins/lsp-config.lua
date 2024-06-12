@@ -32,8 +32,9 @@ return {
 					stack_upwards = false,
 				},
 				window = {
-					border = "rounded",
+					border = "none",
 					align = "top",
+					winblend = 0,
 				},
 			},
 		},
