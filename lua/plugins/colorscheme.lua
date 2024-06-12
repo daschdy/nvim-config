@@ -36,6 +36,12 @@ return {
 		lazy = false,
 		priority = 1000,
 		config = function()
+			local tokyonight = require("tokyonight")
+			tokyonight.setup({
+				style = "night",
+				transparent = false,
+				hide_inactive_statusline = false,
+			})
 			vim.cmd.colorscheme("tokyonight-night")
 		end,
 	},
