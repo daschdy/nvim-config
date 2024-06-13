@@ -12,6 +12,7 @@ return {
 				formatting.stylua,
 				formatting.prettier,
 				formatting.black,
+				formatting.typstfmt,
 				null_ls.builtins.completion.spell,
 			},
 		})

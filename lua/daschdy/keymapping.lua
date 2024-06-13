@@ -61,3 +61,6 @@ vim.keymap.set("n", "<C-e>", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<C-r>", function() harpoon:list():select(4) end)
 -- vim.keymap.set("n", "<C-S-.>", function() harpoon:list():prev() end)
 -- vim.keymap.set("n", "<C-S-.>", function() harpoon:list():next() end)
+
+-- Typst 
+vim.keymap.set("n", "<leader>tp" , ":TypstPreviewToggle<CR>", {})
