@@ -53,3 +53,6 @@ vim.opt.showmode = false
 -- Decrease update time
 vim.opt.updatetime = 200
 vim.opt.timeoutlen = 250
+
+-- Set cmd height 
+vim.opt.cmdheight = 0
