@@ -61,9 +61,6 @@ return {
 			})
 
 			-- notes
-			lspconfig.marksman.setup({
-				capabilities = capabilities,
-			})
 			lspconfig.typst_lsp.setup({
 				capabilities = capabilities,
 			})
