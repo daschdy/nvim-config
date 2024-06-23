@@ -39,7 +39,7 @@ return {
 			local tokyonight = require("tokyonight")
 			tokyonight.setup({
 				style = "night",
-				transparent = false,
+				transparent = true,
 				hide_inactive_statusline = false,
 			})
 			vim.cmd.colorscheme("tokyonight-night")
