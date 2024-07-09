@@ -32,17 +32,25 @@ return {
 		-- end,
 	},
 	{
-		"folke/tokyonight.nvim",
-		lazy = false,
+		-- "folke/tokyonight.nvim",
+		-- lazy = false,
+		-- priority = 1000,
+		-- config = function()
+		-- 	local tokyonight = require("tokyonight")
+		-- 	tokyonight.setup({
+		-- 		style = "night",
+		-- 		transparent = true,
+		-- 		hide_inactive_statusline = false,
+		-- 	})
+		-- 	vim.cmd.colorscheme("tokyonight-night")
+		-- end,
+	},
+	{
+		"ellisonleao/gruvbox.nvim",
 		priority = 1000,
 		config = function()
-			local tokyonight = require("tokyonight")
-			tokyonight.setup({
-				style = "night",
-				transparent = true,
-				hide_inactive_statusline = false,
-			})
-			vim.cmd.colorscheme("tokyonight-night")
+			vim.o.background = "dark"
+			vim.cmd.colorscheme("gruvbox")
 		end,
 	},
 }
