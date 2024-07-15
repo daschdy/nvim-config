@@ -1,13 +1,13 @@
 return {
 	{
-		"bluz71/vim-moonfly-colors",
-		name = "moonfly",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.g.moonflyTransparent = true
-			vim.cmd.colorscheme("moonfly")
-		end,
+		-- "bluz71/vim-moonfly-colors",
+		-- name = "moonfly",
+		-- lazy = false,
+		-- priority = 1000,
+		-- config = function()
+		-- 	vim.g.moonflyTransparent = true
+		-- 	vim.cmd.colorscheme("moonfly")
+		-- end,
 	},
 	{
 		-- "navarasu/onedark.nvim",
@@ -32,17 +32,17 @@ return {
 		-- end,
 	},
 	{
-		-- "folke/tokyonight.nvim",
-		-- lazy = false,
-		-- priority = 1000,
-		-- config = function()
-		-- 	local tokyonight = require("tokyonight")
-		-- 	tokyonight.setup({
-		-- 		style = "night",
-		-- 		transparent = true,
-		-- 		hide_inactive_statusline = false,
-		-- 	})
-		-- 	vim.cmd.colorscheme("tokyonight-night")
-		-- end,
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			local tokyonight = require("tokyonight")
+			tokyonight.setup({
+				style = "night",
+				transparent = true,
+				hide_inactive_statusline = false,
+			})
+			vim.cmd.colorscheme("tokyonight-night")
+		end,
 	},
 }
