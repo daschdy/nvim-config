@@ -10,7 +10,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- Automatically format on save
-vim.api.nvim_create_autocmd("SaveOnFormat", {
+vim.api.nvim_create_autocmd("BufWritePre", {
 	desc = "Automatically format on save",
 	callback = function()
 		vim.lsp.buf.format()

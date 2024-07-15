@@ -12,5 +12,7 @@ return {
 		})
 
 		require("mini.comment").setup()
+
+		require("mini.icons").setup()
 	end,
 }
