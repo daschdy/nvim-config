@@ -36,9 +36,8 @@ return {
 		local servers = {
 			"cssls",
 			"astro",
-			"tsserver",
 			"html",
-			"typst_lsp",
+			"tinymist",
 			"jdtls",
 			"lua_ls",
 			"pyright",
