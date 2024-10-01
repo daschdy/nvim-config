@@ -54,5 +54,5 @@ vim.opt.showmode = false
 vim.opt.updatetime = 200
 vim.opt.timeoutlen = 250
 
--- Set cmd height 
+-- Set cmd height
 vim.opt.cmdheight = 0
