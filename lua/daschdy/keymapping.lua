@@ -71,3 +71,6 @@ vim.keymap.set("n", "<leader>tp", ":TypstPreviewToggle<CR>", { desc = "Toggle ty
 -- Oil
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<space>-", require("oil").toggle_float, { desc = "Toggle oil float" })
+
+-- terminal
+vim.keymap.set("n", "<leader>tt", ":split | terminal<CR>", { desc = "Open terminal" })
