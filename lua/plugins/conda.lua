@@ -1,0 +1,3 @@
+return {
+	"kmontocam/nvim-conda",
+}
