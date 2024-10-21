@@ -1,3 +1,1 @@
-return {
-	"kmontocam/nvim-conda",
-}
+return { con("kmontocam/nvim-conda") }
