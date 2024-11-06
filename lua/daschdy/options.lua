@@ -4,7 +4,7 @@
 vim.opt.relativenumber = true
 vim.opt.number = true
 
--- tabs to 2 spaces
+-- tabs to 4 spaces
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true

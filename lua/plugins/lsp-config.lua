@@ -6,6 +6,9 @@ return {
 		"j-hui/fidget.nvim",
 
 		{ "williamboman/mason-lspconfig.nvim", opts = { auto_install = true } },
+
+		-- formatting
+		"stevearc/conform.nvim",
 	},
 	config = function()
 		require("mason").setup({
@@ -15,6 +18,10 @@ return {
 					package_pending = "",
 					package_uninstalled = "",
 				},
+			},
+			ensure_installed = {
+				"lua_ls",
+				"stylua",
 			},
 		})
 
@@ -34,11 +41,6 @@ return {
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 		local lspconfig = require("lspconfig")
 		local servers = {
-			"cssls",
-			"astro",
-			"html",
-			"tinymist",
-			"jdtls",
 			"lua_ls",
 			"pyright",
 			"clangd",
@@ -49,5 +51,13 @@ return {
 				capabilities = capabilities,
 			})
 		end
+
+		require("conform").setup({
+			formatters_by_ft = {
+				lua = { "stylua" },
+				c = { "clang-format" },
+				python = { "black" },
+			},
+		})
 	end,
 }
