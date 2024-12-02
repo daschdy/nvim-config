@@ -44,6 +44,7 @@ return {
 			"lua_ls",
 			"pyright",
 			"clangd",
+			"gopls",
 		}
 
 		for _, server in ipairs(servers) do
