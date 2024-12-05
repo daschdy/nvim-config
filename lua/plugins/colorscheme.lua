@@ -22,18 +22,27 @@ return {
 		-- end,
 	},
 	{
-		"folke/tokyonight.nvim",
+		-- "folke/tokyonight.nvim",
+		-- lazy = false,
+		-- priority = 1000,
+		-- config = function()
+		-- 	local tokyonight = require("tokyonight")
+		-- 	tokyonight.setup({
+		-- 		style = "night",
+		-- 		transparent = true,
+		-- 		hide_inactive_statusline = false,
+		-- 	})
+		-- 	vim.cmd.colorscheme("tokyonight-night")
+		-- 	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+		-- end,
+	},
+	{
+		"bluz71/vim-moonfly-colors",
+		name = "moonfly",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			local tokyonight = require("tokyonight")
-			tokyonight.setup({
-				style = "night",
-				transparent = true,
-				hide_inactive_statusline = false,
-			})
-			vim.cmd.colorscheme("tokyonight-night")
-			-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-		end,
-	},
+			vim.cmd.colorscheme("moonfly")
+		end
+	}
 }
